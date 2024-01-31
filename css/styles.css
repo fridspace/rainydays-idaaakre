@@ -1,0 +1,425 @@
+/* Global styles*/
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Bebas Neue, Arial, Helvetica, sans-serif;
+}
+
+p,
+a,
+.cta,
+.jackets-list h2  {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.welcome__content h1,
+.sale h2 {
+    font-size: 2.13rem;
+    line-height: 2.5rem;
+} 
+
+.welcome__content h1 {
+    color: #fff;
+}   
+
+.top-nav a,
+.main-nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+} 
+
+.main-nav a {
+    font-size: 0.5rem;
+} 
+
+
+.top-nav {
+    background-color: #666B00;
+    padding: 0.5rem 1.5rem;
+    display: block;
+    text-align: end;
+}
+
+.top-nav nav a {
+    color:#fff;
+    display: inline-block;
+}
+
+.contact-us-upper-nav {
+    visibility: hidden;
+    margin-right: 5rem;
+}
+
+.main-nav nav,
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~  nav {
+    display: inline;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 1.5rem;
+    color: #0A3641;
+}
+
+.main-nav nav {
+    position: absolute;
+    background: #fff;
+    flex-direction: row;
+    justify-content: start;
+    text-align: start;
+    top: 6.5rem;
+    left: 0rem;
+    right: 0rem;
+    padding: 1rem 1.5rem;
+}   
+
+.main-nav nav a {
+    color: #0A3641;
+    margin-right: 1rem;
+    padding: 0.5rem 0rem;
+    text-align: left;
+}
+
+.logo {
+    height: 2.5rem;
+    width: auto;
+    margin-right: 1.3rem;
+}
+
+#current {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0rem;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+main {
+    margin: 0rem 1.5rem 1.5rem 1.5rem;
+    color: #000;
+}
+
+
+img {
+    width: 100%;
+}    
+
+footer {
+    background-color:#0A3641;
+    color: #fff;
+    text-align: center;
+    padding: 2.5rem 0rem;
+}
+
+.cta {
+    background-color: #C10A00;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.25%;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0.6rem 2rem;
+    border-radius: 6.25rem;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+/*Homepage*/
+
+.welcome {
+    background-image: url("../images/welcome-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 20.5rem;
+    position: relative;
+}
+
+.welcome__content {
+    position: absolute;
+    text-align: end;
+    right: 1.5rem;
+    top: 2rem;
+    min-width: 10rem;
+    max-width: 18rem;
+}
+
+.welcome__content .cta {
+    right: 1rem;
+    bottom: -0.5rem;
+} 
+
+.detail-photos {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem 1rem 0rem;
+    min-height: 23.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.detail-photos__one {
+    background-image: url("../images/detail-photo-one.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+}
+
+.detail-photos__two {
+    background-image: url("../images/detail-photo-two-small.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+}  
+
+.sale {
+    background: linear-gradient(0deg, #FFFFA1 76%,#fff 24%);
+    min-height: 12.5rem;
+    max-height: 16rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.sale__content {
+    position: absolute;
+    text-align: center;
+    flex: 4;
+    top: 3rem;
+    left: 2.9rem;
+}
+
+.sale__photo {
+    position: absolute;
+    text-align: center;
+    flex: 6;
+    right: 1.5rem;
+    max-width: 14rem;
+    bottom: 0rem;
+}
+
+/* Jackets page/Product page */
+
+.jackets-header {
+    background: url(../images/adobestock-canoeing.jpg) center bottom no-repeat;
+    background-size: cover;
+    min-height: 10.5rem;
+}
+
+.jackets {
+    text-align: center;
+}
+
+.jackets-list {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.jackets-list a {
+    text-decoration: none;
+    color: #000;
+}
+
+.jackets-list h2,
+.jackets-list p {
+    text-align: left;
+    font-size: 0.9rem;
+}
+.jackets-list h2 {
+    font-weight: 600;
+}
+
+.jackets-list__image {
+    background-color: #EDE9E9;
+    padding: 1rem;
+}
+
+/* About us page */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+}
+
+.about div {
+    flex: 1;
+}
+.about__image {
+    min-height: 17rem;
+    max-height: 32.5rem;
+    width: 100%;
+}
+
+.margin-bottom {
+    margin-bottom: 2.5rem;
+} 
+
+
+@media (min-width:600px) {
+
+     /* Global */
+        
+    .logo {
+        height: auto;
+        width: 14rem;
+    }
+
+    .main-nav nav {
+        top: 12rem;
+    }
+        
+    /* Homepage*/
+
+    .detail-photos {
+        min-height: 50rem;
+    }
+
+    .sale__photo {
+        max-width: 16rem;
+    }
+
+}
+
+@media (min-width:800px) {
+
+    /* Global */
+
+    .top-nav {
+        padding: 1rem 5rem;
+    }
+
+    .main-nav {
+        display: flex;
+        margin: 1.5rem 5rem;
+    }
+
+    .main-nav nav {
+        display: block;
+        position: static;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .main-nav nav a {
+        display: inline-block;
+    }
+
+    .contact-us-upper-nav {
+        visibility: visible;
+    }
+
+    .contact-us-main-nav {
+        visibility: hidden;
+    }
+
+    main {
+        margin: 0rem 5rem 3rem 5rem;
+    }
+
+    /* Homepage */
+
+    .welcome {
+        min-height: 53rem;
+    }
+
+    .welcome__content {
+        max-width: 46rem;
+    }
+
+    .detail-photos {
+        flex-direction: row-reverse;
+        min-height: 27rem;
+    }
+    
+    .detail-photos__two {
+        background-image: url("../images/detail-photo-two.jpg");
+    }  
+
+    .sale {
+        min-height: 20rem;
+        margin-left: -5rem;
+        margin-right: -5rem;
+    }
+
+    .sale__photo {
+        max-width: 25rem;
+    }
+
+    /* Product page */
+
+    .jackets-header {
+        min-height: 35rem;
+    }
+
+    .jackets-list {
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+    }
+
+    /* About us page*/
+
+    
+}
+
+@media (min-width:1024px) {
+
+    /* Homepage*/
+
+    .detail-photos {
+        margin: 5.5rem 5rem 2.5rem 5rem;
+    }
+
+    .welcome h1,
+    .sale h2 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    .sale {
+        min-height: 31rem;
+    }
+
+    .sale__photo {
+        max-width: 39.8rem;
+        right: 5rem;
+    }
+
+    .sale__content {
+        left: 10.6rem;
+    }
+
+    /* About us page*/
+
+    .about {
+        flex-direction: row-reverse;
+    }
+
+    .our-jurney {
+        flex-direction: row;
+        row-gap: 1.5rem;
+    }
+}
