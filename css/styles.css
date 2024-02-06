@@ -3,14 +3,17 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+form fieldset legend {
     font-family: Bebas Neue, Arial, Helvetica, sans-serif;
 }
 
 p,
 a,
 .cta,
-.jackets-list h2  {
+.jackets-list h2,
+li,
+form span  {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
@@ -32,11 +35,6 @@ a,
     font-weight: 600;
 } 
 
-.main-nav a {
-    font-size: 0.5rem;
-} 
-
-
 .top-nav {
     background-color: #666B00;
     padding: 0.5rem 1.5rem;
@@ -46,7 +44,7 @@ a,
 
 .top-nav nav a {
     color:#fff;
-    display: inline-block;
+    display: input-box-block;
 }
 
 .contact-us-upper-nav {
@@ -60,10 +58,11 @@ a,
 }
 
 #menu-checkbox:checked ~  nav {
-    display: inline;
+    display: block;
 }
 
 .main-nav {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -77,23 +76,26 @@ a,
     flex-direction: row;
     justify-content: start;
     text-align: start;
-    top: 6.5rem;
+    top: 3rem;
     left: 0rem;
     right: 0rem;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1.5rem;
+    margin: 0rem -1.5rem;
 }   
+
 
 .main-nav nav a {
     color: #0A3641;
     margin-right: 1rem;
     padding: 0.5rem 0rem;
     text-align: left;
+    font-size: 0.5rem;
 }
 
 .logo {
     height: 2.5rem;
     width: auto;
-    margin-right: 1.3rem;
+    margin-right: 1.8rem;
 }
 
 #current {
@@ -109,7 +111,7 @@ body {
 }
 
 main {
-    margin: 0rem 1.5rem 1.5rem 1.5rem;
+    margin: 0rem 0rem 1.5rem 0rem;
     color: #000;
 }
 
@@ -137,25 +139,28 @@ footer {
     padding: 0.6rem 2rem;
     border-radius: 6.25rem;
     position: relative;
-    display: inline-block;
+    display: input-box-block;
     overflow: hidden;
+}
+
+.cta-large {
+    width: 100%;
 }
 
 /*Homepage*/
 
 .welcome {
-    background-image: url("../images/welcome-header.jpg");
+    background-image: url("../images/welcome-header-small.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 20.5rem;
-    position: relative;
 }
 
 .welcome__content {
     position: absolute;
     text-align: end;
     right: 1.5rem;
-    top: 2rem;
+    top: 10rem;
     min-width: 10rem;
     max-width: 18rem;
 }
@@ -168,35 +173,33 @@ footer {
 .detail-photos {
     display: flex;
     flex-direction: column;
-    margin: 2rem 0rem 1rem 0rem;
+    margin: 2rem 1.5rem 1rem 1.5rem;
     min-height: 23.5rem;
+    max-height: 60rem;
     position: relative;
     text-align: center;
 }
 
 .detail-photos__one {
-    background-image: url("../images/detail-photo-one.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../images/detail-photo-one-small.jpg");
     flex: 1;
 }
 
 .detail-photos__two {
-    background-image: url("../images/detail-photo-two-small.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url("../images/detail-photo-two-small-new.jpg");
     flex: 1;
 }  
 
 .sale {
     background: linear-gradient(0deg, #FFFFA1 76%,#fff 24%);
     min-height: 12.5rem;
-    max-height: 16rem;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    max-height: 17rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
     display: flex;
     flex-direction: row;
     position: relative;
+    margin-top: 1rem;
 }
 
 .sale__content {
@@ -204,28 +207,36 @@ footer {
     text-align: center;
     flex: 4;
     top: 3rem;
-    left: 2.9rem;
+    left: 3rem;
 }
 
 .sale__photo {
     position: absolute;
-    text-align: center;
     flex: 6;
     right: 1.5rem;
-    max-width: 14rem;
-    bottom: 0rem;
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+
+.sale__content .cta {
+    bottom: 1rem;
 }
 
 /* Jackets page/Product page */
 
 .jackets-header {
-    background: url(../images/adobestock-canoeing.jpg) center bottom no-repeat;
+    background: url("../images/jacket-header-small.jpg") center center no-repeat;
     background-size: cover;
-    min-height: 10.5rem;
+    min-height: 15rem;
 }
 
-.jackets {
+.jackets-page {
     text-align: center;
+    margin: 1rem auto 1rem auto;
+    max-width: 30rem;
+    min-width: 20rem;
+    padding: 0rem 1.5rem;
 }
 
 .jackets-list {
@@ -255,64 +266,232 @@ footer {
     padding: 1rem;
 }
 
+/* Jacket-spesific-page*/
+
+.jacket-spesific-page {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    text-align: center;
+    max-width: 30rem;
+    min-width: 20rem;
+    padding: 0rem 1.5rem;
+}
+
+.jacket-spesific-page > section {
+    flex: 1;
+}
+
+
+.jacket-one__image {
+    background-color: #EDE9E9;
+    padding: 1.5rem 0rem;
+    display: flex;
+} 
+
+.jacket-one__text {
+    text-align: left;
+} 
+
+.jacket-colors,
+.jacket-sizes,
+.color-nav label {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+} 
+
+.color-nav label {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #000;
+    border-radius: 50%;
+} 
+
+.color-nav label:before {
+    outline: 0rem;
+    outline-offset: 0rem;
+}     
+
+.color-nav label:after {
+    outline: 2px solid currentcolor;
+    outline-offset: 2px;
+}     
+
+
+.color-nav label {
+    margin: 0rem 1rem;
+}
+
+#red {
+    background-color: #C22424;
+}
+
+#blue {
+    background-color: #202597;
+}
+
+#green {
+    background-color: #417A26;
+}
+
+
 /* About us page */
 
 .about {
+    margin: 1rem auto 1rem auto;
+    max-width: 25rem;
+    min-width: 20rem;
+    padding: 0rem 1.5rem;
     display: flex;
     flex-direction: column;
     column-gap: 1rem;
+    max-height: 40.5rem;
+
 }
 
 .about div {
     flex: 1;
 }
+
+.about__content {
+    align-self: flex-end;
+}
+
 .about__image {
-    min-height: 17rem;
-    max-height: 32.5rem;
     width: 100%;
+    height: 50%;
+    display: flex;
 }
 
 .margin-bottom {
     margin-bottom: 2.5rem;
 } 
 
+/* Contact page */
+
+.contact-page {
+    text-align: center;
+    padding: 0rem 1.5rem;
+}  
+
+form {
+    text-align: left;
+    margin: 0rem auto;
+    max-width: 39.3rem;
+}
+
+.form-wrapper {
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: #F8FFFF;
+    border: 1px solid #898585;
+} 
+
+input,
+textarea {
+    border: 1px solid #898585;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    background-color: #F8FFFF;
+    width: 100%;
+}
+
+form .form-wrapper .inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+form .form-wrapper .inline .input-box {
+    width: calc(100% / 2 - 1rem);
+} 
+
+.form-wrapper .inline .input-box input {
+    width: 100%;
+} 
+
+.input-box {
+    flex-flow: row wrap;
+    align-items: center;
+} 
+
+form span {
+    position: absolute;
+    background-color: #F8FFFF;
+    margin-left: 1rem;
+    padding: 0.5rem;
+}   
+
+
+.input-box input {
+    vertical-align: middle;
+} 
+
+.submit-button {
+    border: 0rem;
+}  
+
+/* checkout */
+
+.checkout-page {
+    margin: 1rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: left;
+}  
+
+.product-details > * {
+    flex: 1;
+    padding-top: 2rem;
+} 
+
+.product-details ul {
+    padding:0rem;
+}
+
+.product-details li {
+    display: block;
+}
+
+.product-details__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-details__list > ul {
+    flex: 1;
+}
+
+.bold {
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+form fieldset {
+    border: 0rem;
+    text-align: left;
+    padding: 0rem;
+    margin-top: 1.5rem;
+}
 
 @media (min-width:600px) {
 
-     /* Global */
-        
-    .logo {
-        height: auto;
-        width: 14rem;
-    }
-
-    .main-nav nav {
-        top: 12rem;
-    }
-        
-    /* Homepage*/
-
-    .detail-photos {
-        min-height: 50rem;
-    }
-
-    .sale__photo {
-        max-width: 16rem;
-    }
-
-}
-
-@media (min-width:800px) {
-
     /* Global */
 
-    .top-nav {
-        padding: 1rem 5rem;
+    .logo {
+        height: 4rem;
     }
 
     .main-nav {
         display: flex;
-        margin: 1.5rem 5rem;
     }
 
     .main-nav nav {
@@ -322,11 +501,12 @@ footer {
 
     .hamburger-icon {
         display: none;
-    }
+    } 
 
     .main-nav nav a {
         display: inline-block;
-    }
+        font-size: 1rem;
+    } 
 
     .contact-us-upper-nav {
         visibility: visible;
@@ -335,45 +515,106 @@ footer {
     .contact-us-main-nav {
         visibility: hidden;
     }
+        
+    /* Homepage*/
 
-    main {
-        margin: 0rem 5rem 3rem 5rem;
+    .welcome {
+        background-image: url("../images/welcome-header-large.jpg");
+        min-height: 25rem;
+    }
+
+    .welcome__content {
+        top: 12rem;
+        margin-right: 3rem;
+    }
+
+    .detail-photos {
+        min-height: 40rem;
+    }
+
+    .sale {
+        min-height: 17rem;
+        max-height: 20rem;
+    }
+
+    .sale__content {
+        top: 5rem;
+        left: 5rem;
+    }
+
+
+    /* Jackets page */
+
+    .jackets-header {
+        background: url("../images/jacket-header-large-new.jpg") center no-repeat;
+        min-height: 20rem;
+        max-height: 28rem;
+        background-size: cover;
+    }
+
+
+}
+
+@media (min-width:800px) {
+
+    /* Global */
+
+    .welcome h1,
+    .sale h2 {
+        font-size: 4rem;
+        line-height: 5rem;
     }
 
     /* Homepage */
 
     .welcome {
-        min-height: 53rem;
+        min-height: 43rem;
+        max-height: 53rem;
     }
 
     .welcome__content {
-        max-width: 46rem;
+        top: 13rem;
+        max-width: 40rem;
+        min-width: 35rem;
+        margin-right: 2rem;
+
     }
+
+    .welcome__content .cta {
+        right: 6rem;
+        bottom: 3rem;
+    } 
 
     .detail-photos {
         flex-direction: row-reverse;
-        min-height: 27rem;
+        min-height: 29rem;
+        row-gap: 0rem;
     }
+
+    .detail-photos__one {
+        background-image: url("../images/detail-photo-one-large.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        flex: 55;
+    }   
     
     .detail-photos__two {
-        background-image: url("../images/detail-photo-two.jpg");
+        background-image: url("../images/detail-photo-two-large.jpg");
+        background-repeat: no-repeat;
+        background-position: center ;
+        flex: 45;
     }  
 
     .sale {
         min-height: 20rem;
-        margin-left: -5rem;
-        margin-right: -5rem;
     }
 
-    .sale__photo {
-        max-width: 25rem;
+    .sale__content .cta {
+        bottom: 3rem;
     }
+
 
     /* Product page */
-
-    .jackets-header {
-        min-height: 35rem;
-    }
 
     .jackets-list {
         column-gap: 1.5rem;
@@ -382,16 +623,47 @@ footer {
 
     /* About us page*/
 
+    .about {
+        max-width: 80rem;
+        min-width: 50rem;
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
+
+    .about__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .our-jurney {
+        flex-direction: row;
+        row-gap: 1.5rem;
+        text-align: right;
+        justify-content: last baseline;
+    }
+
     
 }
 
 @media (min-width:1024px) {
 
-    /* Homepage*/
+    /* Global */
 
-    .detail-photos {
-        margin: 5.5rem 5rem 2.5rem 5rem;
+    .logo {
+        height: 6rem;
     }
+
+    main {
+        margin: 0rem 5rem 3rem 5rem;
+    }
+
+    .top-nav {
+        padding: 1rem 5rem;
+    }
+
+    .main-nav {
+        margin: 1.5rem 5rem;
+    } 
 
     .welcome h1,
     .sale h2 {
@@ -399,27 +671,36 @@ footer {
         line-height: 7rem;
     }
 
+    /* Homepage */
+
+    .welcome__content {
+        max-width: 46rem;
+        min-width: 30rem;
+    }
+
+    .detail-photos {
+        margin: 5.5rem 0rem 2.5rem 0rem;
+    }
+
     .sale {
         min-height: 31rem;
+        margin-left: -5rem;
+        margin-right: -5rem;
     }
 
     .sale__photo {
-        max-width: 39.8rem;
         right: 5rem;
     }
 
     .sale__content {
-        left: 10.6rem;
+        left: 5.6rem;
+        top: 5rem;
+    }
+
+    .sale__content .cta {
+        bottom: 5rem;
     }
 
     /* About us page*/
 
-    .about {
-        flex-direction: row-reverse;
-    }
-
-    .our-jurney {
-        flex-direction: row;
-        row-gap: 1.5rem;
-    }
 }

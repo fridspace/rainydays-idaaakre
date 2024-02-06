@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get good quality rain jackets for your next adventure">
     <title>Rainydays | All-Weather Jacket</title>
     <link href="../css/styles.css" rel="stylesheet" />
@@ -32,27 +32,43 @@
        </nav>
       </section>
     </header>
-    <main>
+    <main class="jacket-spesific-page">
       <section>
         <div>
-         <img src="../images/jacket1-all-weather-jacket.png" alt="All-Weather Jacket" />
+         <img src="../images/product-spesific-large.png" alt="All-Weather Jacket" class="jacket-one__image"/>
         </div>
       </section>
-      <section>
+      <section class="jacket-one__text"> 
         <div>
          <h1>All-Weather Jacket</h1>
          <p>2 999kr</p>
         </div>
-        <div>
-         <h2>Color</h2>
-         <p>Choose color</p>
+          <h2>Color</h2>
+          <div class="jacket-colors">
+            <form action="" class="color-nav">
+             <input type="radio" name="color" id="black" hidden/>
+             <label for="black"></label>
+             <input type="radio" name="color" id="red" hidden/>
+             <label for="red" id="red"></label>
+             <input type="radio" name="color" id="blue" hidden/>
+             <label for="blue" id="blue"></label>
+             <input type="radio" name="color" id="green" hidden/>
+             <label for="green" id="green"></label>
+            </form>
+          </div>
         </div>
         <div>
-         <h2>Size</h2>
-         <p>choose size</p>
+          <h2>Size</h2>
+          <div class="jacket-sizes">
+            <span class="xs" data-color="#000">xs</span>
+            <span class="s" data-color="#C22424">s</span>
+            <span class="m" data-color="202597">m</span>
+            <span class="l" data-color="#417A26">l</span>
+            <span class="xl" data-color="#417A26">xl</span>
+          </div>
         </div>
         <div>
-         <input type="submit" value="Add to bag" class="cta"/>
+         <input type="submit" value="Add to bag" class="cta cta-large"/>
          <p>What element to use for the button?</p>
         </div>
         <div>
@@ -66,11 +82,11 @@
          <div>
           <h2>Durable Construction</h2>
           <p>Built to withstand the element, this rain jacket is made with durable seams and reinforced stitching to ensure long-lasting performance. It’s ready for your next adventure, hiking or climbing your next mountain.</p>
-         </div>
+        </div>
       </section>
     </main> 
     <footer>
-       <img src="images/rainydays-logo-white2.png" alt="Logo for Rainydays" class="logo"/>
+       <img src="../images/rainydays-logo-white2.png" alt="Logo for Rainydays" class="logo"/>
        <p>&copy; 2023 Rainydays,Inc. All Rights Reserved.</p>
     </footer> 
   </body>

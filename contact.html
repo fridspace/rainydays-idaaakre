@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact us here if you have any questions">
     <title>Rainydays | Contact Us</title>
     <link href="css/styles.css" rel="stylesheet">
@@ -32,21 +32,53 @@
        </nav>
       </section>
     </header>
-    <main>
-        <h1>Contact</h1>
-        <form method="post">
-            <label for="name"> First Name</label>
-            <input type="text" id="name" name="name" />
-            <label for="name"> Last Name</label>
-            <input type="text" id="name" name="name" />
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-            <input type="submit" value="Send Now" />
-        </form>
+    <main class="contact-page">
+      <h1>Contact us here</h1>
+      <form method="post" action="#">
+        <div class="form-wrapper">
+          <div class="inline">
+            <div class="input-box">
+              <span for="first-name">First Name *</span>
+              <input type="text" id="first-name" name="first-name" required="required"/>
+            </div>
+            <div class="input-box">
+              <span for="last-name"> Last Name *</span>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+          </div>
+          <div>
+           <span for="email">Email</span>
+           <input type="email" id="email" name="email" />
+          </div>
+          <div class="inline">
+            <div class="input-box">
+              <span for="land-code">Land Code *</span>
+              <input type="number" id="land-code" name="land-code" />
+            </div>
+            <div class="input-box">
+              <span for="phone-number">Phone Number *</span>
+              <input type="tel" id="phone-number" name="phone-number" />
+            </div>
+          </div>
+          <div>
+           <span for="order-number">Order Number</span>
+           <input type="number" id="order-number" name="order-number" />
+          </div>
+          <div>
+           <span for="subject"> Subject *</span>
+           <input type="text" id="subject" name="subject" />
+          </div>
+          <div>
+           <span for="message">Your message *</span>
+           <textarea id="message" name="message" rows="5" cols="24"></textarea>
+          </div>
+        </div>
+        <input type="submit" value="submit" class="cta cta-large submit-button"/>
+      </form>
     </main> 
     <footer>
-       <img src="images/rainydays-logo-white2.png" alt="Logo for Rainydays" class="logo"/>
-       <p>&copy; 2023 Rainydays,Inc. All Rights Reserved.</p>
+      <img src="images/rainydays-logo-white2.png" alt="Logo for Rainydays" class="logo"/>
+      <p>&copy; 2023 Rainydays,Inc. All Rights Reserved.</p>
     </footer> 
   </body>
 </html>

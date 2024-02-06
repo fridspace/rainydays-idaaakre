@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Get good quality rain jackets for your next adventure">
     <title>Rainydays | Checkout</title>
     <link href="css/styles.css" rel="stylesheet">
@@ -28,32 +28,111 @@
           <a href="index.html">Home</a>
           <a href="jackets.html">Jackets</a>
           <a href="about.html">About Us</a>
-          <a href="contact.html" class="contact-us-main-nav">Contact Us</a></li>
+          <a href="contact.html" class="contact-us-main-nav">Contact Us</a>
        </nav>
       </section>
     </header>
-    <main>
+    <main class="checkout-page">
       <section>
-        <div class="landscape-photo">
-          <h1>Get ready to push your comfort zone</h1>
-          <a href="jackets.html">Shop</a>
+        <h1>Checkout</h1>
+        <div class="product-details">
+          <div class="jackets-list__image">
+            <img src="images/jacket1-all-weather-jacket.png" alt="All-weather jacket" />
+          </div>
+          <div>
+            <h2>All-Weather Jacket</h2>
+            <p>2 999kr</p>
+            <div class="product-details__list">
+              <ul>
+               <li>Art.nr:</li>
+               <li>Color:</li>
+               <li>Size:</li>
+               <li>Product:</li>
+               <li>Delivery:</li>
+               <li class="bold">Sum:</li>
+              </ul>
+              <ul>
+               <li>120494103</li>
+               <li>Red</li>
+               <li>M</li>
+               <li>2 999kr</li>
+               <li>39kr</li>
+               <li class="bold">3 038kr</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      <section>
-            <div>
-              <img src="images/adobestock-smile.jpg" alt="Two people smiling while hiking">
-            </div>
-            <div>
-              <img src="images/adobestock-orangejacket.jpg" alt="Detailed photo off a jacket">
-            </div>
       </section>
       <section>
-        <div>
-          <h2>Get 30% off</h2>
-          <a href="jackets.html">Shop</a>
-        </div>
-        <div>
-          <img src="images/rainydays-jacket1-cropped.png" alt="Rainjacket one" class="sale-photo"/> 
-        </div>
+        <form method="post">
+          <fieldset>
+            <legend>Shopping and delivery</legend>
+            <div class="form-wrapper">
+              <div class="input-box-inline">
+               <div>
+                 <label for="first-name"> First Name *</label>
+                 <input type="text" id="first-name" name="first-name" />
+               </div>
+               <div>
+                 <label for="last-name"> Last Name *</label>
+                 <input type="text" id="last-name" name="last-name" />
+               </div>
+              </div>
+             <label for="email">Email</label>
+             <input type="email" id="email" name="email" />
+             <div class="input-box-inline">
+              <div>
+               <label for="land-code">Land Code *</label>
+               <input type="number" id="land-code" name="land-code" />
+              </div>
+              <div>
+               <label for="phone-number">Phone Number *</label>
+               <input type="number" id="phone-number" name="phone-number" />
+              </div>
+             </div>
+             <label for="address"> Address *</label>
+             <input type="text" id="address" name="address" />
+             <label for="floor-number"> Floor Number *</label>
+             <input type="text" id="floor-number" name="floor-number" />
+             <div class="input-box-inline">
+              <div>
+               <label for="land-code">Post code *</label>
+               <input type="number" id="land-code" name="land-code" />
+              </div>
+              <div>
+               <label for="city">City *</label>
+               <input type="text" id="city" name="city" />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Shopping and delivery</legend>
+            <div class="form-wrapper">
+              <div class="input-box-inline">
+                <div>
+                 <label for="first-name"> First Name *</label>
+                 <input type="text" id="first-name" name="first-name" />
+                </div>
+                <div>
+                 <label for="last-name"> Last Name *</label>
+                 <input type="text" id="last-name" name="last-name" />
+              </div>
+             </div>
+             <label for="card-number">Card Number *</label>
+             <input type="number" id="card-number" name="card-number" />
+             <div class="input-box-inline">
+               <div>
+                 <label for="expiring-date">Expiring Date *</label>
+                 <input type="text" id="expiring-date" name="expiring-date" />
+               </div>
+               <div>
+                 <label for="cvv-cvc">CVV/CVC *</label>
+                 <input type="number" id="cvv-cvc" name="cvv-cvc" />
+              </div>
+            </div>
+          </div>
+          <input type="submit" value="finnish purchase" class="cta cta-large submit-button"/>
+        </form>
       </section>
     </main> 
     <footer>
