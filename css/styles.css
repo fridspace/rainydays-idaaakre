@@ -295,46 +295,58 @@ footer {
 
 .jacket-colors,
 .jacket-sizes,
-.color-nav label {
+.color-nav {
     display: flex;
     text-align: center;
     justify-content: space-around;
 } 
 
-.color-nav label {
+.color-nav > * {
+    flex: 1;
     display: inline-block;
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: #000;
-    border-radius: 50%;
+    font-size: 2.5rem;
 } 
 
-.color-nav label:before {
-    outline: 0rem;
-    outline-offset: 0rem;
-}     
 
-.color-nav label:after {
-    outline: 2px solid currentcolor;
-    outline-offset: 2px;
-}     
-
-
-.color-nav label {
-    margin: 0rem 1rem;
+#red #color-two {
+    display: grid;
+    place-content: center;
+    color: #C22424;
+    outline-offset: 5px;
+    outline-width: 1px;
+    outline-color: #000;
+    border-radius: 50%;
 }
+
+#red #color-two::before {
+    outline-style:none;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+}
+
+#red #color-two:checked:before {
+    transform: scale(1);
+}   
+
 
 #red {
-    background-color: #C22424;
+    display: none;
 }
 
-#blue {
-    background-color: #202597;
-}
 
-#green {
-    background-color: #417A26;
-}
+
+#color-one {
+    color: #000;
+} 
+
+
+#color-three {
+    color: #202597;
+} 
+
+#color-four {
+    color: #417A26;
+} 
 
 
 /* About us page */
