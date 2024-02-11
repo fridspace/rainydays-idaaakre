@@ -1,0 +1,115 @@
+/* Contact page */
+
+.contact-page {
+    text-align: center;
+    padding: 0rem 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}  
+
+.contact-page form {
+    text-align: left;
+    margin: 0rem auto;
+    max-width: 39.3rem;
+}
+
+.contact-page form .cta {
+    text-align: center;
+    display: block;
+} 
+
+.submit-button {
+    border: 0rem;
+} 
+
+.form-wrapper {
+    margin: auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--background-form-color);
+    border: 1px solid var(--border-form-color);
+} 
+
+input,
+textarea {
+    border: 1px solid var(--border-form-color);
+    margin: 1rem 0rem;
+    padding: 1rem;
+    background-color: var(--background-form-color);
+    width: 100%;
+}
+
+form .form-wrapper .inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+
+form .form-wrapper .inline .input-box {
+    width: calc(100% / 2 - 0.5rem);
+} 
+
+.form-wrapper .inline .input-box input {
+    width: 83%;
+} 
+
+.form-wrapper div input,
+.form-wrapper div textarea {
+    width: 92%;
+} 
+
+.input-box {
+    flex-flow: row wrap;
+    align-items: center;
+} 
+
+form span {
+    position: absolute;
+    background-color: var(--background-form-color);
+    margin-left: 1rem;
+    padding: 0.5rem;
+}   
+
+.input-box input {
+    vertical-align: middle;
+} 
+
+/* checkout */
+
+.checkout-main {
+    padding: 0rem 1.5rem;
+    margin: 1rem auto 0em auto;
+}  
+
+.checkout-main h1 {
+    text-align: center;
+}  
+
+.checkout-page {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.checkout-page .section-one {
+    flex: 1;
+}  
+
+.checkout-page .section-two {
+    flex: 1;
+}  
+
+.checkout-page h1 {
+    text-align: center;
+}
+
+form fieldset {
+    border: 0rem;
+    text-align: left;
+    padding: 0rem;
+    margin-top: 1.5rem;
+}
+
+form a {
+    margin-top: 1.5rem;
+}    

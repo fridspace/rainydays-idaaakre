@@ -1,0 +1,96 @@
+.jacket-spesific-page {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    text-align: center;
+    max-width: 30rem;
+    min-width: 20rem;
+    padding: 0rem 1.5rem;
+}
+
+.jacket-spesific-page > section {
+    flex: 1;
+}
+
+
+.jacket-spesific-page .jacket-one__backround img {
+    max-height: 41rem;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 2.5rem 0rem;
+}   
+
+.jacket-one__text {
+    text-align: left;
+} 
+
+.color-nav__name,
+.color-nav,
+.jacket-sizes {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+} 
+
+.color-nav > * {
+    display: inline;
+} 
+ 
+
+.color-nav input,
+.jacket-sizes input {
+    display: none;
+}
+
+
+.icon-style {
+    font-size: 2.5rem;
+    background-color:#fff;
+    padding: 0.5rem;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    transition: border 1ms;
+} 
+
+.icon-style:hover {
+    border: 1px #000 solid;
+} 
+
+.jacket-sizes {
+    margin-bottom: 1rem;
+} 
+
+.pluss-one i {
+    position: absolute;
+    text-align: end;
+    font-size: 0.8rem;
+    color: var(--cta-color);
+    background-color: #fff;
+    border-radius: 50%;
+    top: 0.5rem;
+    right: 1.1rem;
+    display: none;
+}
+
+#add-to-bag {
+    display: none;
+}
+
+#add-to-bag:checked ~ .pluss-one i {
+    display: inline-block;
+}
+
+.jacket-one__text p,
+.jacket-one-product-desription p {
+    margin-top: -0.5rem;
+}
+
+.jacket-one__text h1 {
+    margin-bottom: 1rem;
+}
+
+.jacket-one__text h2 {
+    font-size: 1rem;
+    line-height: 1rem;
+}

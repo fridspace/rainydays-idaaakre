@@ -6,6 +6,8 @@
     <meta name="description" content="Get good quality rain jackets for your next adventure">
     <title>Rainydays | All-Weather Jacket</title>
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/all-weather-jacket.css" rel="stylesheet" />
+    <link href="../css/media.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -33,65 +35,72 @@
       </section>
     </header>
     <main class="jacket-spesific-page">
-      <section>
-        <div>
-         <img src="../images/product-spesific-large.png" alt="All-Weather Jacket" class="jacket-one__image"/>
-        </div>
+      <section class="jacket-one__backround">
+        <img src="../images/product-spesific-large.png" alt="All-Weather Jacket"/>
       </section>
       <section class="jacket-one__text"> 
-        <div>
+        <section>
          <h1>All-Weather Jacket</h1>
          <p>2 999kr</p>
-        </div>
-          <h2>Color</h2>
+         <h2>Color</h2>
           <div class="jacket-colors">
-            <form class="color-nav">
-             <label for="black" class="color-one"><i class="fa-solid fa-circle" id="color-one"></i>Black</label>
+            <div class="color-nav">
+             <label for="black" class="color-one"><i class="fa-solid fa-circle icon-style color-one"></i></label>
              <input type="radio" name="color" id="black"/>
-             <label for="red"><i class="fa-solid fa-circle border" id="color-two"></i></label>
+             <label for="red"><i class="fa-solid fa-circle icon-style color-two"></i></label>
              <input type="radio" name="color" id="red"/>
-             <label for="blue"><i class="fa-solid fa-circle" id="color-three"></i>Blue</label>
+             <label for="blue"><i class="fa-solid fa-circle icon-style color-three"></i></label>
              <input type="radio" name="color" id="blue"/>
-             <label for="green"><i class="fa-solid fa-circle" id="color-four"></i>Green</label>
+             <label for="green"><i class="fa-solid fa-circle icon-style color-four"></i></label>
              <input type="radio" name="color" id="green"/>
-            </form>
-          </div>
-        </div>
-        <div>
-          <h2>Size</h2>
-          <div class="jacket-sizes">
-             <label for="xs">XS</label>
-             <input type="radio" name="sizes" id="xs"/>
-             <label for="s">S</label>
-             <input type="radio" name="sizes" id="s"/>
-             <label for="m">M</label>
-             <input type="radio" name="sizes" id="m"/>
-             <label for="l">L</label>
-             <input type="radio" name="sizes" id="l"/>
-             <label for="xl">XL</label>
-             <input type="radio" name="sizes" id="xl"/>
-          </div>
-        </div>
-        <div>
-         <input type="submit" value="Add to bag" class="cta cta-large"/>
-         <p>What element to use for the button?</p>
-        </div>
-        <div>
-         <h2>Product Description</h2>
-         <p>Introducing our versatile and stylish Rain Jacket, the perfect companion for your outdoor adventures. Designed to keep you dry and comfortable in wet and stormy weather, this rain jacket combines functionality with fashion, ensuring you stay protected and look great while doing so.</p>
-        </div>
-        <div>
-          <h2>Waterproof and Breathable</h2>
-          <p>Crafted from high-quality, waterproof materials, this rain jacket effectively repels water to keep you dry during the heaviest downpours. Its breathable construction also allows excess moisture to escape, preventing you from feeling clammy or overheated.</p>
+            </div>
+            <div class="color-nav__name">
+              <label for="black">Black</label>
+              <label for="red">Red</label>
+              <label for="blue">Blue</label>
+              <label for="green">Green</label>
+            </div>
          </div>
          <div>
-          <h2>Durable Construction</h2>
-          <p>Built to withstand the element, this rain jacket is made with durable seams and reinforced stitching to ensure long-lasting performance. It’s ready for your next adventure, hiking or climbing your next mountain.</p>
-        </div>
+          <h2>Size</h2>
+          <div class="jacket-sizes">
+            <label for="xs">XS</label>
+            <input type="radio" name="sizes" id="xs"/>
+            <label for="s">S</label>
+            <input type="radio" name="sizes" id="s"/>
+            <label for="m">M</label>
+            <input type="radio" name="sizes" id="m"/>
+            <label for="l">L</label>
+            <input type="radio" name="sizes" id="l"/>
+            <label for="xl">XL</label>
+            <input type="radio" name="sizes" id="xl"/>
+          </div>
+         </div>
+         <div>
+          <label for="add-to-bag" class="cta cta-large">Add to bag</label>
+          <input type="checkbox" id="add-to-bag" />
+          <div class="pluss-one">
+           <i class="fa-solid fa-circle-1"></i>
+         </div>
+        </section>
+        <section class="jacket-one-product-desription">
+         <div>
+          <h2>Product Description</h2>
+          <p>Introducing our versatile and stylish Rain Jacket, the perfect companion for your outdoor adventures. Designed to keep you dry and comfortable in wet and stormy weather, this rain jacket combines functionality with fashion, ensuring you stay protected and look great while doing so.</p>
+         </div>
+         <div>
+           <h2>Waterproof and Breathable</h2>
+           <p>Crafted from high-quality, waterproof materials, this rain jacket effectively repels water to keep you dry during the heaviest downpours. Its breathable construction also allows excess moisture to escape, preventing you from feeling clammy or overheated.</p>
+          </div>
+          <div>
+           <h2>Durable Construction</h2>
+           <p>Built to withstand the element, this rain jacket is made with durable seams and reinforced stitching to ensure long-lasting performance. It’s ready for your next adventure, hiking or climbing your next mountain.</p>
+         </div>
+        </section>
       </section>
     </main> 
     <footer>
-       <img src="../images/rainydays-logo-white2.png" alt="Logo for Rainydays" class="logo"/>
+       <img src="../images/rainydays-logo-white2.png" alt="Logo for Rainydays" class="logo no-margin"/>
        <p>&copy; 2023 Rainydays,Inc. All Rights Reserved.</p>
     </footer> 
   </body>

@@ -1,0 +1,368 @@
+@media (min-width:600px) {
+
+    /* Global */
+
+    .logo {
+        height: 4rem;
+    }
+
+    .main-nav {
+        display: flex;
+    }
+
+    .main-nav nav {
+        display: block;
+        position: static;
+    }
+
+    .hamburger-icon {
+        display: none;
+    } 
+
+    .main-nav nav a {
+        display: inline-block;
+        font-size: 1rem;
+    } 
+
+    .contact-us-upper-nav {
+        visibility: visible;
+    }
+
+    .contact-us-main-nav {
+        visibility: hidden;
+    }
+        
+    /* Homepage*/
+
+    .welcome {
+        background: url("../images/welcome-header-large.jpg") no-repeat center;
+        background-size: cover;
+        min-height: 23rem;
+        max-height: 40rem;
+    }
+
+    .welcome__content {
+        top: 12rem;
+        margin-right: 3rem;
+    }
+
+    .detail-photos {
+        min-height: 40rem;
+    }
+
+    .sale {
+        min-height: 17rem;
+        max-height: 20rem;
+    }
+
+    .sale__content {
+        top: 5rem;
+        left: 5rem;
+    }
+
+
+    /* Jackets page */
+
+    .jackets-header {
+        background: url("../images/jacket-header-large-new.jpg") no-repeat center center;
+        background-size: cover;
+        min-height: 20rem;
+        max-height: 32rem;
+    }
+
+
+}
+
+@media (min-width:800px) {
+
+    /* Global */
+
+    .welcome h1,
+    .sale h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    /* Homepage */
+
+    .welcome {
+        min-height: 35rem;
+        max-height: 53rem;
+    }
+
+    .welcome__content {
+        top: 13rem;
+        max-width: 40rem;
+        min-width: 35rem;
+        margin-right: 2rem;
+
+    }
+
+    .welcome__content .cta {
+        right: 6rem;
+        bottom: 3rem;
+    } 
+
+    .detail-photos {
+        flex-direction: row-reverse;
+        min-height: 29rem;
+        row-gap: 0rem;
+    }
+
+    .detail-photos__one {
+        background: url("../images/detail-photo-one-large.jpg") no-repeat center;
+        background-size: cover;
+        flex: 55;
+    }   
+    
+    .detail-photos__two {
+        background: url("../images/detail-photo-two-large.jpg") no-repeat center;
+        background-size: cover;
+        flex: 45;
+    }  
+
+    .sale {
+        min-height: 20rem;
+    }
+
+    .sale__content .cta {
+        bottom: 3rem;
+    }
+
+
+    /* Product page */
+
+    .jackets-list {
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+        min-width: 45rem;
+    }
+
+    /* About us page*/
+
+    .about {
+        max-width: 80rem;
+        min-width: 47rem;
+        flex-direction: row-reverse;
+        overflow: hidden;
+    }
+
+    .about__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .our-jurney {
+        flex-direction: row;
+        row-gap: 1.5rem;
+        text-align: right;
+        justify-content: last baseline;
+    }
+
+    /* checkout-page*/
+
+    .checkout-main {
+        padding: 0rem 1.5rem;
+        margin: 1rem auto;
+        max-width: 60rem;
+    }  
+
+    .checkout-page {
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 1.5rem;
+    }
+
+    .checkout-page .section-one {
+        flex: 1;
+    }
+
+    .checkout-page .section-two {
+        flex: 10;
+    }
+
+    .checkout-page .product-details {
+        flex-direction: column;
+    }
+
+    .checkout-page .product-details {
+        margin-top: 3rem;
+    }
+
+    .checkout-main h1 {
+        text-align: center;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    /* Global */
+
+    .logo {
+        height: 6rem;
+    }
+
+    .cta,
+    .jacket-one__text h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .jacket-one__text h2 {
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1rem;
+    }
+
+    .jacket-one__text p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+
+    .jackets-page p,
+    .jackets-list h2,
+    .jackets-list p,
+    .about__content p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .about__content h1,
+    .checkout-main h1,
+    .shopping-bag h1,
+    .jackets-page h1 {
+        font-size: 3.75rem;
+    }
+
+    /*index-page*/
+
+    .welcome {
+        min-height: 40rem;
+    }
+
+    .homepage {
+        padding: 0rem 5rem;
+    }
+
+    main .jacket-spesific-page {
+        margin: 0rem auto 3rem auto;
+        padding: 0rem 5rem;
+    }
+
+    .top-nav {
+        padding: 1rem 5rem;
+    }
+
+    .main-nav {
+        margin: 1.5rem 5rem;
+    } 
+
+    .welcome h1,
+    .sale h2 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    .cta {
+        padding: 0.75rem 4rem;
+        border-radius: 6.25rem;
+    }
+
+
+    .pluss-one i {
+        top: 1rem;
+        right: 4.7rem;
+    }
+
+    /* Homepage */
+
+    .welcome__content {
+        max-width: 46rem;
+        min-width: 30rem;
+    }
+
+    .welcome__content {
+        top: 16rem;
+        margin-right: 5rem;
+
+    }
+    .welcome__content .cta {
+        right: 6rem;
+        bottom: 3rem;
+    } 
+
+    .detail-photos {
+        margin: 5.5rem 0rem 2.5rem 0rem;
+    }
+
+    .sale {
+        min-height: 31rem;
+        margin-left: -5rem;
+        margin-right: -5rem;
+    }
+
+    .sale__photo {
+        right: 5rem;
+    }
+
+    .sale__content {
+        left: 5.6rem;
+        top: 5rem;
+    }
+
+    .sale__content .cta {
+        bottom: 5rem;
+    }
+
+    /* jackets page*/
+
+    .jackets-list {
+        min-width: 60rem;
+    }
+
+    #max-width {
+        max-width: 39.25rem;
+    }
+
+
+    /* jacke spesific page*/
+
+
+    .jacket-spesific-page {
+        display: flex;
+        flex-direction: row;
+        max-width: 60rem;
+        min-width: 20rem;
+        padding: 0rem 5rem;
+        column-gap: 1.5rem;
+        max-height: 50rem;
+        justify-content: space-between;
+    }
+
+    .jacket-spesific-page .jacket-one__backround {
+        max-height: 45;
+        width: auto;
+    }
+
+    .jacket-one__text {
+        margin-top: 1rem;
+    }
+
+    /*checkout success page*/
+
+    .checkout-success-main section {
+        max-width: 39.25rem;
+    }
+
+    .checkout-success-main section h1 {
+        font-size: 2rem;
+    } 
+    
+    .checkout-success-main section p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        
+    } 
+
+}

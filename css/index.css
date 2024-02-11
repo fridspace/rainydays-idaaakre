@@ -1,0 +1,85 @@
+.welcome {
+    background: url("../images/welcome-header-small.jpg") no-repeat;
+    background-size: cover;
+    min-height: 20.5rem;
+}
+
+.welcome__content {
+    position: absolute;
+    text-align: end;
+    right: 1.5rem;
+    top: 10rem;
+    min-width: 10rem;
+    max-width: 18rem;
+}
+
+.welcome__content .cta {
+    right: 1rem;
+    bottom: -0.5rem;
+} 
+
+.welcome__content h1,
+.sale h2 {
+    font-size: 2.13rem;
+    line-height: 2.5rem;
+} 
+
+.welcome__content h1 {
+    color: #fff;
+} 
+
+.detail-photos {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 1.5rem 1rem 1.5rem;
+    min-height: 24rem;
+    max-height: 60rem;
+    position: relative;
+    text-align: center;
+}
+
+.detail-photos__one {
+    background: url("../images/detail-photo-one-small.jpg") no-repeat center;
+    background-size: cover;
+    flex: 1;
+}
+
+.detail-photos__two {
+    background: url("../images/detail-photo-two-small-new.jpg") no-repeat center;
+    background-size: cover;
+    flex: 1;
+}  
+
+.sale {
+    background: linear-gradient(0deg, #FFFFA1 76%,#fff 24%);
+    min-height: 12.5rem;
+    max-height: 17rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.sale__content {
+    position: absolute;
+    text-align: center;
+    flex: 4;
+    top: 3rem;
+    left: 3rem;
+}
+
+.sale__photo {
+    position: absolute;
+    flex: 6;
+    right: 1.5rem;
+    height: 100%;
+    width: auto;
+    display: flex;
+}
+
+.sale__content .cta {
+    bottom: 1rem;
+}

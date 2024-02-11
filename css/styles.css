@@ -1,10 +1,9 @@
-/* Global styles*/
+@import "imports/variables.css";
 
 h1,
 h2,
 h3,
-h4,
-form fieldset legend {
+h4 {
     font-family: Bebas Neue, Arial, Helvetica, sans-serif;
 }
 
@@ -13,30 +12,64 @@ a,
 .cta,
 .jackets-list h2,
 li,
-form span  {
+form span,
+button,
+label,
+.jacket-spesific-page h2,
+.product-details h2,
+form fieldset legend {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
 }
 
-.welcome__content h1,
-.sale h2 {
-    font-size: 2.13rem;
-    line-height: 2.5rem;
-} 
+/*font-sizes in global*/
 
-.welcome__content h1 {
-    color: #fff;
-}   
+.about__content p,
+.jackets-page p,
+.jackets-list h2,
+.jackets-list p {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}  
+
+.checkout-main h1,
+.shopping-bag h1,
+.jacket-one__text h1,
+.jackets-page h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}  
+
+.top-nav a,
+.main-nav a,
+.product-details h2,
+.jacket-one__text p,
+form fieldset legend {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}  
+
+.jacket-one__text p,
+.jacket-one-product-desription p,
+.product-details__list,
+.color-nav__name {
+    font-size: 0.8rem;
+    line-height: 1rem;
+}  
+
+form fieldset legend,
+.top-nav a,
+.main-nav a,
+.jacket-one__text h2 {
+    font-weight: 600;
+} 
 
 .top-nav a,
 .main-nav a {
     text-decoration: none;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 600;
 } 
 
 .top-nav {
-    background-color: #666B00;
+    background-color: var(--top-header-color);
     padding: 0.5rem 1.5rem;
     display: block;
     text-align: end;
@@ -44,7 +77,7 @@ form span  {
 
 .top-nav nav a {
     color:#fff;
-    display: input-box-block;
+    display: inline-block;
 }
 
 .contact-us-upper-nav {
@@ -67,7 +100,7 @@ form span  {
     flex-direction: row;
     align-items: center;
     margin: 1rem 1.5rem;
-    color: #0A3641;
+    color: var(--brand-color);
 }
 
 .main-nav nav {
@@ -111,7 +144,6 @@ body {
 }
 
 main {
-    margin: 0rem 0rem 1.5rem 0rem;
     color: #000;
 }
 
@@ -121,25 +153,29 @@ img {
 }    
 
 footer {
-    background-color:#0A3641;
+    background-color:var(--brand-color);
     color: #fff;
     text-align: center;
     padding: 2.5rem 0rem;
+    
+}
+
+.no-margin {
+    margin: 0rem;
 }
 
 .cta {
-    background-color: #C10A00;
+    background-color: var(--cta-color);
     color: white;
     text-decoration: none;
     font-size: 0.9rem;
     line-height: 1.5rem;
-    letter-spacing: 1.25%;
     text-transform: uppercase;
     font-weight: 600;
     padding: 0.6rem 2rem;
     border-radius: 6.25rem;
     position: relative;
-    display: input-box-block;
+    display: inline-flex;
     overflow: hidden;
 }
 
@@ -147,330 +183,55 @@ footer {
     width: 100%;
 }
 
-/*Homepage*/
-
-.welcome {
-    background-image: url("../images/welcome-header-small.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 20.5rem;
+button {
+    border: none;
 }
 
-.welcome__content {
-    position: absolute;
-    text-align: end;
-    right: 1.5rem;
-    top: 10rem;
-    min-width: 10rem;
-    max-width: 18rem;
-}
-
-.welcome__content .cta {
-    right: 1rem;
-    bottom: -0.5rem;
-} 
-
-.detail-photos {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem 1.5rem 1rem 1.5rem;
-    min-height: 23.5rem;
-    max-height: 60rem;
-    position: relative;
+.jacket-one__text .cta,
+.checkout-page .cta,
+.shopping-bag-main .cta {
+    display: block;
+    padding-left: 0rem;
+    padding-right: 0rem;
     text-align: center;
 }
 
-.detail-photos__one {
-    background-image: url("../images/detail-photo-one-small.jpg");
-    flex: 1;
-}
-
-.detail-photos__two {
-    background-image: url("../images/detail-photo-two-small-new.jpg");
-    flex: 1;
-}  
-
-.sale {
-    background: linear-gradient(0deg, #FFFFA1 76%,#fff 24%);
-    min-height: 12.5rem;
-    max-height: 17rem;
-    margin-left: 0rem;
-    margin-right: 0rem;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin-top: 1rem;
-}
-
-.sale__content {
-    position: absolute;
-    text-align: center;
-    flex: 4;
-    top: 3rem;
-    left: 3rem;
-}
-
-.sale__photo {
-    position: absolute;
-    flex: 6;
-    right: 1.5rem;
-    height: 100%;
-    width: auto;
-    display: flex;
-}
-
-.sale__content .cta {
-    bottom: 1rem;
-}
-
-/* Jackets page/Product page */
-
-.jackets-header {
-    background: url("../images/jacket-header-small.jpg") center center no-repeat;
-    background-size: cover;
-    min-height: 15rem;
-}
-
-.jackets-page {
-    text-align: center;
-    margin: 1rem auto 1rem auto;
-    max-width: 30rem;
-    min-width: 20rem;
-    padding: 0rem 1.5rem;
-}
-
-.jackets-list {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
-    row-gap: 1rem;
-}
-
-.jackets-list a {
-    text-decoration: none;
-    color: #000;
-}
-
-.jackets-list h2,
-.jackets-list p {
-    text-align: left;
-    font-size: 0.9rem;
-}
-.jackets-list h2 {
-    font-weight: 600;
-}
-
-.jackets-list__image {
-    background-color: #EDE9E9;
-    padding: 1rem;
-}
-
-/* Jacket-spesific-page*/
-
-.jacket-spesific-page {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-    text-align: center;
-    max-width: 30rem;
-    min-width: 20rem;
-    padding: 0rem 1.5rem;
-}
-
-.jacket-spesific-page > section {
-    flex: 1;
-}
-
-
-.jacket-one__image {
-    background-color: #EDE9E9;
-    padding: 1.5rem 0rem;
-    display: flex;
-} 
-
-.jacket-one__text {
-    text-align: left;
-} 
-
-.jacket-colors,
-.jacket-sizes,
-.color-nav {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-} 
-
-.color-nav > * {
-    flex: 1;
-    display: inline-block;
-    font-size: 2.5rem;
-} 
-
-
-#red #color-two {
-    display: grid;
-    place-content: center;
-    color: #C22424;
-    outline-offset: 5px;
-    outline-width: 1px;
-    outline-color: #000;
-    border-radius: 50%;
-}
-
-#red #color-two::before {
-    outline-style:none;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-}
-
-#red #color-two:checked:before {
-    transform: scale(1);
-}   
-
-
-#red {
-    display: none;
-}
-
-
-
-#color-one {
+.color-one {
     color: #000;
 } 
 
+.color-two {
+    color:#C10A05;
+} 
 
-#color-three {
+.color-three {
     color: #202597;
 } 
 
-#color-four {
+.color-four {
     color: #417A26;
 } 
 
-
-/* About us page */
-
-.about {
-    margin: 1rem auto 1rem auto;
-    max-width: 25rem;
-    min-width: 20rem;
-    padding: 0rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    column-gap: 1rem;
-    max-height: 40.5rem;
-
-}
-
-.about div {
-    flex: 1;
-}
-
-.about__content {
-    align-self: flex-end;
-}
-
-.about__image {
-    width: 100%;
-    height: 50%;
-    display: flex;
-}
-
-.margin-bottom {
-    margin-bottom: 2.5rem;
-} 
-
-/* Contact page */
-
-.contact-page {
-    text-align: center;
-    padding: 0rem 1.5rem;
-}  
-
-form {
-    text-align: left;
-    margin: 0rem auto;
-    max-width: 39.3rem;
-}
-
-.form-wrapper {
-    margin: auto;
-    text-align: center;
-    padding: 1rem;
-    background-color: #F8FFFF;
-    border: 1px solid #898585;
-} 
-
-input,
-textarea {
-    border: 1px solid #898585;
-    margin: 1rem 0rem;
-    padding: 1rem;
-    background-color: #F8FFFF;
-    width: 100%;
-}
-
-form .form-wrapper .inline {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} 
-
-form .form-wrapper .inline .input-box {
-    width: calc(100% / 2 - 1rem);
-} 
-
-.form-wrapper .inline .input-box input {
-    width: 100%;
-} 
-
-.input-box {
-    flex-flow: row wrap;
-    align-items: center;
-} 
-
-form span {
-    position: absolute;
-    background-color: #F8FFFF;
-    margin-left: 1rem;
-    padding: 0.5rem;
-}   
-
-
-.input-box input {
-    vertical-align: middle;
-} 
-
-.submit-button {
-    border: 0rem;
-}  
-
-/* checkout */
-
-.checkout-page {
-    margin: 1rem 1.5rem 1.5rem 1.5rem;
-    text-align: center;
-}
-
 .product-details {
+    margin: 1rem auto;
+    max-width: 40rem;
+    min-width: 20rem;
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    text-align: left;
-}  
+}
 
 .product-details > * {
     flex: 1;
     padding-top: 2rem;
-} 
+}
 
 .product-details ul {
     padding:0rem;
 }
 
 .product-details li {
-    display: block;
+    display: flex;
 }
 
 .product-details__list {
@@ -487,232 +248,12 @@ form span {
     margin-top: 1rem;
 }
 
-form fieldset {
-    border: 0rem;
-    text-align: left;
-    padding: 0rem;
-    margin-top: 1.5rem;
+.jacket-one__backround {
+    background-color: var(--background-product-color);
+    padding: 1rem;
 }
 
-@media (min-width:600px) {
-
-    /* Global */
-
-    .logo {
-        height: 4rem;
-    }
-
-    .main-nav {
-        display: flex;
-    }
-
-    .main-nav nav {
-        display: block;
-        position: static;
-    }
-
-    .hamburger-icon {
-        display: none;
-    } 
-
-    .main-nav nav a {
-        display: inline-block;
-        font-size: 1rem;
-    } 
-
-    .contact-us-upper-nav {
-        visibility: visible;
-    }
-
-    .contact-us-main-nav {
-        visibility: hidden;
-    }
-        
-    /* Homepage*/
-
-    .welcome {
-        background-image: url("../images/welcome-header-large.jpg");
-        min-height: 25rem;
-    }
-
-    .welcome__content {
-        top: 12rem;
-        margin-right: 3rem;
-    }
-
-    .detail-photos {
-        min-height: 40rem;
-    }
-
-    .sale {
-        min-height: 17rem;
-        max-height: 20rem;
-    }
-
-    .sale__content {
-        top: 5rem;
-        left: 5rem;
-    }
 
 
-    /* Jackets page */
-
-    .jackets-header {
-        background: url("../images/jacket-header-large-new.jpg") center no-repeat;
-        min-height: 20rem;
-        max-height: 28rem;
-        background-size: cover;
-    }
 
 
-}
-
-@media (min-width:800px) {
-
-    /* Global */
-
-    .welcome h1,
-    .sale h2 {
-        font-size: 4rem;
-        line-height: 5rem;
-    }
-
-    /* Homepage */
-
-    .welcome {
-        min-height: 43rem;
-        max-height: 53rem;
-    }
-
-    .welcome__content {
-        top: 13rem;
-        max-width: 40rem;
-        min-width: 35rem;
-        margin-right: 2rem;
-
-    }
-
-    .welcome__content .cta {
-        right: 6rem;
-        bottom: 3rem;
-    } 
-
-    .detail-photos {
-        flex-direction: row-reverse;
-        min-height: 29rem;
-        row-gap: 0rem;
-    }
-
-    .detail-photos__one {
-        background-image: url("../images/detail-photo-one-large.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        flex: 55;
-    }   
-    
-    .detail-photos__two {
-        background-image: url("../images/detail-photo-two-large.jpg");
-        background-repeat: no-repeat;
-        background-position: center ;
-        flex: 45;
-    }  
-
-    .sale {
-        min-height: 20rem;
-    }
-
-    .sale__content .cta {
-        bottom: 3rem;
-    }
-
-
-    /* Product page */
-
-    .jackets-list {
-        column-gap: 1.5rem;
-        row-gap: 1.5rem;
-    }
-
-    /* About us page*/
-
-    .about {
-        max-width: 80rem;
-        min-width: 50rem;
-        flex-direction: row-reverse;
-        overflow: hidden;
-    }
-
-    .about__image {
-        width: 100%;
-        height: auto;
-    }
-
-    .our-jurney {
-        flex-direction: row;
-        row-gap: 1.5rem;
-        text-align: right;
-        justify-content: last baseline;
-    }
-
-    
-}
-
-@media (min-width:1024px) {
-
-    /* Global */
-
-    .logo {
-        height: 6rem;
-    }
-
-    main {
-        margin: 0rem 5rem 3rem 5rem;
-    }
-
-    .top-nav {
-        padding: 1rem 5rem;
-    }
-
-    .main-nav {
-        margin: 1.5rem 5rem;
-    } 
-
-    .welcome h1,
-    .sale h2 {
-        font-size: 6rem;
-        line-height: 7rem;
-    }
-
-    /* Homepage */
-
-    .welcome__content {
-        max-width: 46rem;
-        min-width: 30rem;
-    }
-
-    .detail-photos {
-        margin: 5.5rem 0rem 2.5rem 0rem;
-    }
-
-    .sale {
-        min-height: 31rem;
-        margin-left: -5rem;
-        margin-right: -5rem;
-    }
-
-    .sale__photo {
-        right: 5rem;
-    }
-
-    .sale__content {
-        left: 5.6rem;
-        top: 5rem;
-    }
-
-    .sale__content .cta {
-        bottom: 5rem;
-    }
-
-    /* About us page*/
-
-}
