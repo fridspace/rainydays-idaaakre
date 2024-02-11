@@ -63,7 +63,7 @@ form .form-wrapper .inline .input-box {
     align-items: center;
 } 
 
-form span {
+form label {
     position: absolute;
     background-color: var(--background-form-color);
     margin-left: 1rem;

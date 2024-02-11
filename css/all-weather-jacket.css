@@ -8,10 +8,13 @@
     padding: 0rem 1.5rem;
 }
 
-.jacket-spesific-page > section {
+.jacket-spesific-page > div {
     flex: 1;
 }
 
+.jacket-spesific-page > div {
+    flex: 1;
+}
 
 .jacket-spesific-page .jacket-one__backround img {
     max-height: 41rem;
