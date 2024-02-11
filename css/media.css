@@ -19,7 +19,6 @@
     }   
 }
 
-
 @media (min-width:600px) {
 
     /* Global */
@@ -321,7 +320,7 @@
     }
 
     .sale {
-        min-height: 31rem;
+        height: 31rem;
         margin-left: -5rem;
         margin-right: -5rem;
     }
