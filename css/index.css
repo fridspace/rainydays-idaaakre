@@ -52,8 +52,7 @@
 
 .sale {
     background: linear-gradient(0deg, #FFFFA1 76%,#fff 24%);
-    min-height: 12.5rem;
-    max-height: 17rem;
+    height: 10rem;
     margin-left: 0rem;
     margin-right: 0rem;
     display: flex;
@@ -67,8 +66,8 @@
     position: absolute;
     text-align: center;
     flex: 4;
-    top: 3rem;
-    left: 3rem;
+    top: 2rem;
+    left: 2rem;
 }
 
 .sale__photo {
@@ -76,10 +75,10 @@
     flex: 6;
     right: 1.5rem;
     height: 100%;
-    width: auto;
     display: flex;
+    
 }
 
 .sale__content .cta {
-    bottom: 1rem;
+    bottom: 1.7rem;
 }

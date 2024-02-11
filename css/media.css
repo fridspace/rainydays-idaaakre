@@ -1,3 +1,25 @@
+@media (min-width:400px) {
+    .sale {
+        height: 13rem;
+    }  
+
+    .sale__content {
+        top: 3rem;
+    }   
+}
+
+@media (min-width:500px) {
+    .sale {
+        height: 15rem;
+    }  
+
+    .sale__content {
+        top: 5rem;
+        left: 4rem
+    }   
+}
+
+
 @media (min-width:600px) {
 
     /* Global */
@@ -51,15 +73,13 @@
     }
 
     .sale {
-        min-height: 17rem;
-        max-height: 20rem;
+        height: 20rem;
     }
 
     .sale__content {
-        top: 5rem;
+        top: 7rem;
         left: 5rem;
-    }
-
+    } 
 
     /* Jackets page */
 
@@ -122,7 +142,11 @@
     }  
 
     .sale {
-        min-height: 20rem;
+        min-height: 25rem;
+    }
+
+    .sale__content {
+        top: 6rem;
     }
 
     .sale__content .cta {
