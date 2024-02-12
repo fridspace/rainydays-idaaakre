@@ -74,9 +74,10 @@
     position: absolute;
     flex: 6;
     right: 1.5rem;
-    height: 100%;
+    height: 9rem;
     width: auto;
     display: flex;
+    margin-top: 1rem;
     
 }
 
