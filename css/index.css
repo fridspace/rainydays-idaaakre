@@ -75,6 +75,7 @@
     flex: 6;
     right: 1.5rem;
     height: 100%;
+    width: auto;
     display: flex;
     
 }
