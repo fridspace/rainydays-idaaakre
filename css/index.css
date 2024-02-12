@@ -74,11 +74,13 @@
     position: absolute;
     flex: 6;
     right: 1.5rem;
+    bottom: 0rem;
+    display: flex;
+}
+
+.sale__photo img {
     height: 9rem;
     width: auto;
-    display: flex;
-    margin-top: 1rem;
-    
 }
 
 .sale__content .cta {
